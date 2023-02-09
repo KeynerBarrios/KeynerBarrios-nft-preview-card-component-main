@@ -1,0 +1,138 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Cyan1: hsla(178, 100%, 50%, 0.481);
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--Very-dark-blue1)
+}
+
+.container{
+    width: 300px;
+    height: 76vh;
+    margin: 80px auto;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: var(--Very-dark-blue2);
+}
+
+.container_img{
+    margin: 20px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container_img .capa{
+    width: 0%;
+    height: 38vh;
+    background-color: var(--Cyan1);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    visibility: hidden;
+    border-radius: 5px;
+    
+}
+
+.container_img:hover .capa{
+    cursor: pointer;
+    width: 100%;
+    visibility: visible;
+}
+
+.container_img_hearder{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container_content{
+    margin: 20px 20px;
+}
+
+.container_content_title{
+    color: var(--White);
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.container_content_title:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.container_content_paragraph{
+    color: var(--Soft-blue);
+}
+
+.container_content_view{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+    border: none;
+    padding-bottom: 15px;
+    border-bottom: 0.001em solid var(--Soft-blue);
+}
+
+.container_content_view_hearder{
+    width: 0.6em;
+    height: 0.9em;
+    margin-right: 5px;
+}
+
+.container_content_view_paragraph{
+    color: var(--Cyan);
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.container_content_view_paragraph1{
+    color: var(--Soft-blue);
+    margin-left: 5px;
+}
+
+.container_content_view_hearder1{
+    margin-left: 70px;
+}
+
+.container_content_user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container_content_user_header{
+    width: 1.5em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.container_content_user_paragraph{
+    margin-left: 10px;
+    color: var(--Soft-blue);
+    font-size: 0.8em;
+}
+
+span{
+    color: var(--White);
+}
+
+span:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
